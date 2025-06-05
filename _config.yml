@@ -127,10 +127,10 @@ author:
       # url: "https://github.com/"
 
 # Site Footer
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+#footer:
+ # links:
+  #  - label: "GitHub"
+   #   icon: "fab fa-fw fa-github"
       # url:
 
 
