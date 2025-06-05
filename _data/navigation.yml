@@ -11,7 +11,5 @@
 posts:
   - title: "Posts"
     children:
-      - title: "Incident Response Tools"
-        url: /incident-response-tools/
       - title: "IR Powershell Scripts"
         url: /IR-powershell-scripts/  

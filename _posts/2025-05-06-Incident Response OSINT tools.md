@@ -1,5 +1,5 @@
 ---
-title: "IR PowerShell Scripts for Windows"
+title: "IR Powershell Scripts"
 date: 2025-06-05
 categories: [writeups, soc]
 tags: [analysis, detection]
