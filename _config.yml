@@ -284,9 +284,7 @@ compress_html:
     envs: development
 
 
-# Defaults
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
@@ -297,3 +295,6 @@ defaults:
       comments: # true
       share: true
       related: true
+      sidebar:
+        nav: "posts"
+
