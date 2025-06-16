@@ -4,4 +4,11 @@ layout: default
 
 # Welcome to my site
 
-This is a fresh start with the Hacker theme!
+<h2>Writeups</h2>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
