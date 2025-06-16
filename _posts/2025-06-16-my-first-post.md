@@ -2,7 +2,7 @@
 layout: post
 title:  "AWS Hosted MISP"
 date:   2025-06-16 21:00:00 +1000
-categories: Project
+categories: project
 ---
 
 Had the thought to deploy a MISP server at home. But, having the server running all the time has its struggles. So instead I'm going to pay my trusty friends at Amazon to host it for me.
