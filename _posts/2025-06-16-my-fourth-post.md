@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Script for checking windows persistence mechanisms"
+title:  "Powershell script for checking persistence mechanisms"
 date:   2025-06-16 21:00:00 +1000
 categories: scripts
 ---
