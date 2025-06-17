@@ -10,7 +10,6 @@ categories: scripts
 - With a non-paid account you can call the API about 500 times a month and 1 call per 15 seconds
 - I have a range of scripts here that call the virustotal api that may come in handy
 - So you might be pretty slow at triaging.... but atleast you don't have to pay
---- 
 
 ### Netstat connections to VT API call
 
