@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Powershell script for checking persistence mechanisms"
+title:  "Powershell for checking malware persistence (mega script)"
 date:   2025-06-16 21:00:00 +1000
-categories: scripts
+categories: project
 ---
 
 ### GitHub Link

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Useful Powershell For IR/Threat Hunting"
+title:  "Powershell For IR/Threat Hunting"
 date:   2025-06-16 21:00:00 +1000
 categories: scripts
 ---
