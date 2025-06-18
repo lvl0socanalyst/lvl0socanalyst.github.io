@@ -32,4 +32,5 @@ Base64 is deterministic. Meaning there is no randomness. So, identifying pattern
 - Get-LocalGroup | ForEach-Object { Get-LocalGroupMember -Group $_.Name }
 - Get-SmbShare
 - net view \\hostname
+
 --- Domain Recon ---
