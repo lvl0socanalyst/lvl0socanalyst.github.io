@@ -12,4 +12,7 @@ Bunch of Powershell commands I have spun up. Central repo for all of them. Will 
 ### Retrieves SHA-256 hashes from a directory
 - (https://github.com/lvl0socanalyst/Scripts/blob/main/dir_hash_checker.ps1)
 
+### Files owned by a user
+- (https://github.com/lvl0socanalyst/Scripts/blob/main/files_owned_by_user.ps1)
+
 ### 

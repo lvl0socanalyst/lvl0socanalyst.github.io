@@ -4,12 +4,16 @@ description: "Scripts, Project Work, Tutorials and Threat Intel Dumps"
 author:
   name: "Lvl 0 SOC"
 locale: "en-US"
-highlighter: rouge
+
 markdown: kramdown
+highlighter: rouge
 
 kramdown:
+  input: GFM
   syntax_highlighter_opts:
-    inline_theme: github
+    block:
+      line_numbers: false
+
 
 plugins:
   - jekyll-remote-theme
