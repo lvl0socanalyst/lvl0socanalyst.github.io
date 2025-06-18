@@ -13,8 +13,8 @@ categories: scripts
 
 ### Netstat connections to VT API call
 
-https://github.com/lvl0socanalyst/Scripts/blob/main/netstat_connections_virustotal_checker.py
+(https://github.com/lvl0socanalyst/Scripts/blob/main/netstat_connections_virustotal_checker.py)
 
 ### Reads domains from .txt file and queries VT API
 
-https://github.com/lvl0socanalyst/Scripts/blob/main/virustotal_free_api_call.py
+(https://github.com/lvl0socanalyst/Scripts/blob/main/virustotal_free_api_call.py)
