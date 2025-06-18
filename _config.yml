@@ -10,3 +10,15 @@ markdown: kramdown
 kramdown:
   syntax_highlighter_opts:
     inline_theme: github
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+      css: "/assets/css/style.css"

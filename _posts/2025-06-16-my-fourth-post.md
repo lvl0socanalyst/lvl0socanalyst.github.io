@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Powershell for checking malware persistence (mega script)"
+title:  "Powershell For Checking Malware Persistence (mega script)"
 date:   2025-06-16 21:00:00 +1000
 categories: project
 ---
