@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Powershell Scripts for Red Teaming"
+title:  "Powershell for Red Teaming"
 date:   2025-06-16 21:00:00 +1000
 categories: scripts
 ---
