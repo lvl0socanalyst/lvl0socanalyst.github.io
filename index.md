@@ -33,7 +33,7 @@ layout: default
 
 <h2>Privacy</h2>
 <ul>
-  {% for post in site.categories['threat intel'] %}
+  {% for post in site.categories['privacy'] %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
