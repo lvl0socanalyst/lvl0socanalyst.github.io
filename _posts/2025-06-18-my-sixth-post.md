@@ -81,7 +81,7 @@ You'll always be traceable on the internet.
 Connecting to public wifi? Security cameras? How did you get there? Shoulder surfing?
 My point is there is always a way you are traceable. And everyone slips up eventually.
 
-### Whonix VM 
+### Whonix VM Setup (VirtualBox)
 -----Considerations-----
 - If your host PC is compromised - Whonix is
 - VM escape vulnerabilities
