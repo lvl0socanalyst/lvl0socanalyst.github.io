@@ -20,11 +20,12 @@ How to access TOR safely using Tails or not so safely using a Whonix VM
 - Compromised exit node. Can see/modify HTTP traffic. 
 - Important to enforce HTTPs everywhere. This is automatically configured for TOR on Tails and Whonix.
 4. Persistent storage
-- If you are using persistent storage for Tails. It can hypothetically be recovered through DF. 
-- Both Whonix and Tails use LUKS to encrypt persistence storage partitions.
-5. Don't open any files in either OS.
+- If you are using persistent storage for Tails. It is in theory recovery through forensics.
+- Both Whonix and Tails use LUKS to encrypt persistent storage partitions.
+5. Don't open any files in either Tails or Whonix
 - PDFs have had CVEs for RCE in the past 
-7. For the love of god. Even a Tor tells you to. Don't enable JS.
+7. For the love of god. If a page offers free btc
+- Do not enable JS
 
 ### Tails Setup (USB Boot) (Windows)
 -----Considerations-----
@@ -74,6 +75,7 @@ Rufus
 - Compromised entry/exit nodes. Tor users are being backtraced through browser fingerprinting and behavior analytics. https://css.csail.mit.edu/6.858/2023/readings/tor-traffic-analysis.pdf 
 
 -----Further Ramblings-----
+
 I read a book called 'the art of invisibility' many years ago that kick started my interest in anonymity. 
 You'll always be traceable on the internet. 
 Connecting to public wifi? Security cameras? How did you get there? Shoulder surfing?
@@ -100,13 +102,17 @@ VirtualBox
 Whonix ova
 - https://www.whonix.org/download/ova/17.3.9.9/Whonix-Xfce-17.3.9.9.Intel_AMD64.ova
 
+-----Requirements-----
+- Computer not a brick 
+- A brain
+
 -----Instructions-----
 1. Verify VirtualBox and Whonix PGP signatures
 2. Install VirtualBox
 3. Double click on Whonix .ova file
-4. Whonix is made up of two parts - Whonix Gateway | Whonix Workstation. Therefore, we gotta configure both in VirtualBox.
+4. Whonix is made up of two parts. Whonix Gateway and Whonix Workstation. Therefore, we gotta configure both in VirtualBox.
 5. Set the following settings for both VMs
-6. General --> Advanced - Clipboard: Disabled | Drag and Drop: Disabled
+6. General --> Advanced - Clipboard: Disabled - Drag and Drop: Disabled
 7. System --> Motherboard - Disable EFI
 8. System --> Processor - Disable Nested VT-x or AMD-V (Depending on chip)
 9. Display - Disable remote display
@@ -115,16 +121,17 @@ Whonix ova
 12. USB Disabled - Shared Folders Disabled
 13. Whonix Gateway Network Settings (Important bit)
 14. Network --> Adapter 1 - NAT (Promiscuous mode = Deny)
-15. Network --> Adapter 2 - Internal Network (Name = whonix | Promiscuous mode = Deny)
+15. Network --> Adapter 2 - Internal Network (Name = whonix - Promiscuous mode = Deny)
 16. Whonix Workstation Network Settings (Important bit) 
-17. Network --> Adapter 1 - Internal Network (Name = whonix | Promiscuous mode = Deny)
+17. Network --> Adapter 1 - Internal Network (Name = whonix - Promiscuous mode = Deny)
 18. Boot up Whonix Workstation and Whonix Gateway
 19. Ensure Whonix Gateway has finished connecting Whonix Workstation to Tor before you start browsing
 20. Change your host name to generic name ```sudo hostnamectl set-hostname user```
 21. You are all connected and ready for Tor
 
 -----Ramblings-----
+
 The whole time you are browsing TOR a beacon could be sending screenshots through to a C2 on your host and you'd have no idea. This setup
 is the epitome of a false sense of security.
 From a privacy perspective the amount of holes in this setup is laughable.
-But for browsing breach forums or likewise I don't see the harm. Create a new account everytime and go wild.
+But for browsing breach forums or likewise I don't see the harm. Create a new account each time and go wild.
