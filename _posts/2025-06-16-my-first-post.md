@@ -12,7 +12,7 @@ Had the thought to deploy a MISP server at home. But, having the server running 
 Current Setup
 - EC2 Instance (T3.medium - Ubuntu 22.04 Server - Spot Instance - Asia AZ)
 - Elastic Block Storage (60GB)
-- Security Group (Deny all inbound but my IP - SSH, HTTP(s))
+- Security Group (Deny all traffic but my IP - SSH, HTTP(s))
 - Private/Public Subnet
 - VPC
 - Cost Per Day ($0.67)
