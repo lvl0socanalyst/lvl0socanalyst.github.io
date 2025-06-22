@@ -5,6 +5,13 @@ date:   2025-06-16 21:00:00 +1000
 categories: project
 ---
 
+<style>
+  body { font-size: 13px; }
+  h1 { font-size: 19px !important; }
+  h2 { font-size: 17px !important; }
+  h3 { font-size: 15px !important; }
+</style>
+
 ### Overview
 (https://github.com/lvl0socanalyst/Scripts/blob/main/malware_persistence_checker.ps1)
 

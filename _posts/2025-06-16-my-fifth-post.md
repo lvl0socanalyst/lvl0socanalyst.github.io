@@ -5,6 +5,13 @@ date:   2025-06-16 21:00:00 +1000
 categories: scripts
 ---
 
+<style>
+  body { font-size: 13px; }
+  h1 { font-size: 19px !important; }
+  h2 { font-size: 17px !important; }
+  h3 { font-size: 15px !important; }
+</style>
+
 ### Overview
 VT Premium costs an arm and a leg. With a non-paid account you can call the API about 500 times a month and 1 call per 15 seconds. I have a range of scripts here that call the virustotal api that may come in handy.So you might be pretty slow at triaging.... but atleast its free.
 
