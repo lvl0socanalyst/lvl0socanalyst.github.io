@@ -1,15 +1,15 @@
-<style>
-  body {
-    font-size: 10px !important;
-  }
-</style>
-
 ---
 layout: post
 title:  "InfoStealer Browser Extension"
 date:   2025-06-16 21:00:00 +1000
 categories: project
 ---
+
+<style>
+  body {
+    font-size: 10px !important;
+  }
+</style>
 
 ## Overview
 
