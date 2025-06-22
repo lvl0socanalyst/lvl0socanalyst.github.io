@@ -6,10 +6,10 @@ categories: project
 ---
 
 <style>
-  body { font-size: 11px; }
-  h1 { font-size: 17px !important; }
-  h2 { font-size: 15px !important; }
-  h3 { font-size: 13px !important; }
+  body { font-size: 13px; }
+  h1 { font-size: 19px !important; }
+  h2 { font-size: 17px !important; }
+  h3 { font-size: 15px !important; }
 </style>
 
 ## Overview
@@ -22,8 +22,7 @@ The real operating system is your browser. EDR's lack telemetry into browser act
 - History and sites visited
 
 **What they can't see (Windows)**
-- Document Object Model (DOM) 
-- - JS execution
+- Document Object Model (DOM)
 
 Extensions essentially have free reign to run whatever JS they want to inside your browser.
 
