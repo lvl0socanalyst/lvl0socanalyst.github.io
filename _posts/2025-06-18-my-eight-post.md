@@ -6,9 +6,10 @@ categories: project
 ---
 
 <style>
-  body {
-    zoom: 70%;
-  }
+  body { font-size: 11px; }
+  h1 { font-size: 17px !important; }
+  h2 { font-size: 15px !important; }
+  h3 { font-size: 13px !important; }
 </style>
 
 ## Overview
@@ -40,6 +41,7 @@ Without GPO. You are reliant on your trusty friends at Google and Microsoft to a
 ### Phase 1: Code a basic extension up
 
 -----DaRk MoDe (Epic Chrome Extension)------
+
 (https://github.com/lvl0socanalyst/Chrome-Extension)
 
 How is it possible?
