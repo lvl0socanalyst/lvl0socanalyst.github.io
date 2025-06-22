@@ -7,7 +7,7 @@ categories: project
 
 <style>
   body {
-    font-size: 10px !important;
+    zoom: 70%;
   }
 </style>
 
