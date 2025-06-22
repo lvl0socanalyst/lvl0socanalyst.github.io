@@ -35,7 +35,7 @@ Most industry leading EDRs offer options for auditing browser extensions but pro
 - If an extension exfiled data you would essentially have no telemetry into what was exfiled with an EDR
 - Extensions can steal user tokens and cookies. Therefore, hypothetically able to bypass MFA requirements for logins
 
-Solution
+-----Solution-----
 - GPO (Whitelist Approved Extensions) (Legacy solution)
 
 Without GPO. You are reliant on your trusty friends at Google and Microsoft to audit every extension installed onto the store. All it takes is a quick google to realise this isn't happening.
@@ -44,7 +44,7 @@ Without GPO. You are reliant on your trusty friends at Google and Microsoft to a
 
 [-----DaRk MoDe (Epic Chrome Extension)-----](https://github.com/lvl0socanalyst/Chrome-Extension/tree/main/DaRk%20MoDe)
 
-How is it possible?
+-----How is it possible?-----
 
 Well essentially as soon as you install a browser extension you give it full permissions to stuff with anything and everything html, css and js. Which is everything you do in your browser. Depending on what browser is used there are APIs that are called that give the extensions the ability to interact with your browser. 
 
@@ -73,7 +73,7 @@ Serice Workers inject the content scripts into the tabs when an event occurs.
 - Interact with webpage's JS
 - Send and receive messages from the background service worker.
 
-Goals
+-----Goals-----
 1. Create an extension that parses webpages into an epic dark mode
 2. Exfils local and session tokens, cookies and takes screenshots
 
@@ -81,7 +81,7 @@ So after about 20 minutes of LLM and chill I've got an extension that toggles Da
 
 Now that the extension has a functional purpose. Lets add some dodgy stuff.
 
-Dodgy Goals
+-----Dodgy Goals-----
 - Screenshot webpage
 - Grabs session and local tokens
 - Steal cookies
@@ -102,8 +102,9 @@ How data is exfiled
 4. Every 2 minutes background.js invokes the functions that capture the cookies and tokens and sent to Flask server.
 
 -----Ramblings-----
+
 As I was programming this it struck me how dangerous these extensions can be. Previously I've programmed keyloggers that aimed to capture Chrome and Edge browsing activity. It was great and captured sites visited, keystrokes and the lot. However, it didn't have the capability to interact with a page or invoke an action when a certain condition inside the browser occurred. The capability for extensions to be targetted for specific purposes is crazy. I can create a condition that triggers the service worker to call a content script when facebook.com is visited, to redirect the http request to my malicious facebook login page. Furthermore, I could do this for O365 logins as well. Who doesn't love conditional statements? I have a feeling at the end of this project I'm going to be sick of them.
 
 For the next phase I'm going to add a list of conditions to exfil credential data when Facebook is visited. I can choose a field for the content script to look out for on a certain web page and steal that value when a HTTP POST request is invoked.
 
-### Phase 1: If Facebook is visited. Steal my username and password DaRk MoDe
+### Phase 2: If Facebook is visited. Steal my username and password DaRk MoDe
