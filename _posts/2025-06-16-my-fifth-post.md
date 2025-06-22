@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "VirusTotal Free Plan - Scripts"
+title:  "Scripts for VirusTotal Free Plan API"
 date:   2025-06-16 21:00:00 +1000
 categories: scripts
 ---
