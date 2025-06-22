@@ -1,3 +1,9 @@
+<style>
+  body {
+    font-size: 10px !important;
+  }
+</style>
+
 ---
 layout: post
 title:  "InfoStealer Browser Extension"
