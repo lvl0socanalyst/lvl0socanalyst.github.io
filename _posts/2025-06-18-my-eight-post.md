@@ -75,7 +75,7 @@ I've managed to get the extension to start exfilling data pretty nicely.
 - Local and session tokens are sent every 2 minutes
 - Screenshots everytime the toggle button is pressed
 
-![Flask Output](https://raw.githubusercontent.com/lvl0socanalyst/lvl0socanalyst.github.io/main/assets/images/flask_output.png)
+![Test](https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/PNG_transparency_demonstration_1.png/200px-PNG_transparency_demonstration_1.png)
 
 -----Process-----
 1. User Toggles DaRk MoDe
