@@ -84,7 +84,7 @@ The following startup folders are checked
 Malicious files that are set to start on boot here are often named as legitimate Microsoft files and LOLBINs to avoid suspicion.
 
 
-### WMI Event Subscription
+### WMI Event Subscriptions
 WMI subscriptions allow for commands to trigger when a system event occurs. Likewise to reg entries this method is fileless and quite a common method for persistence for more advanced malware.
 
 WMI subscriptions use WQL (Windows Management Instrumentation Query Language) to create conditions on which they should trigger and the action that will occur. WQL uses very similar syntax to SQL, and reads almost like pseudocode. 

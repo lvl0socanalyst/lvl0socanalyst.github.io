@@ -17,8 +17,14 @@ VT Premium costs an arm and a leg. With a non-paid account you can call the API 
 
 ### Netstat connections to VT API call
 
-(https://github.com/lvl0socanalyst/Scripts/blob/main/netstat_connections_virustotal_checker.py)
+Command grabs all the IPs that the host is currently connected to and whacks sends them off to VT for a reputation check.
+
+Useful for if you think a host could be beaconing out to a C2 but can't identify the IP(s).
+
+[-----Netstat IPs Reputation-----](https://github.com/lvl0socanalyst/Scripts/blob/main/netstat_connections_virustotal_checker.py)
 
 ### Reads domains from .txt file and queries VT API
 
-(https://github.com/lvl0socanalyst/Scripts/blob/main/virustotal_free_api_call.py)
+Have a bunch of suspicious domains pulled from proxy logs? Can't be bothered going through one by one?
+
+[-----Domain reputation checker-----](https://github.com/lvl0socanalyst/Scripts/blob/main/virustotal_free_api_call.py)
