@@ -35,6 +35,7 @@ Script gives the following options:
 6. Scan Everything 
 7. Exit
 
+![PowerShell Script Options](/images/script_photo.PNG)
 
 ### Potentially suspicious indicators
 
