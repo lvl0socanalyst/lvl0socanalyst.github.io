@@ -104,6 +104,7 @@ So now we've been over the two proxy types you should care about. Here's where y
 - Logs for residential proxies
 
 -----Darknet proxy store-----
+
 [Digital Goods by ProxyStore](digitazyyxyihwwzudp5syxxyn3qhcd63wqcha2dxpfqiyydmrgdiaad.onion)
 
 ### Setting up Proxy Chains
