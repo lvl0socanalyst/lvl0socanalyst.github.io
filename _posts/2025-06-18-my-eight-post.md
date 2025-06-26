@@ -108,3 +108,7 @@ As I was programming this it struck me how dangerous these extensions can be. Pr
 For the next phase I'm going to add a list of conditions to exfil credential data when Facebook is visited. I can choose a field for the content script to look out for on a certain web page and steal that value when a HTTP POST request is invoked.
 
 ### Phase 2: If Facebook is visited. Steal my username and password DaRk MoDe
+
+
+
+### Phase 3: XMRig option
