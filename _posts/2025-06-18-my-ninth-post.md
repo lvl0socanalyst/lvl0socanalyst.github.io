@@ -88,7 +88,7 @@ So now we've been over the two proxy types you should care about. Here's where y
 - Tor
 - Decentralised/privacy focused form of payment (XMR preferred)
 
-Clearnet proxy stores
+-----Clearnet proxy stores-----
 
 [Proxy-Seller](https://proxy-seller.com)
 - Accepts XMR and other crypto as payment
@@ -103,8 +103,8 @@ Clearnet proxy stores
 - Whitelist IPs
 - Logs for residential proxies
 
-Darknet proxy store
-- Digital Goods by ProxyStore - digitazyyxyihwwzudp5syxxyn3qhcd63wqcha2dxpfqiyydmrgdiaad[.]onion
+-----Darknet proxy store-----
+[Digital Goods by ProxyStore](digitazyyxyihwwzudp5syxxyn3qhcd63wqcha2dxpfqiyydmrgdiaad.onion)
 
 ### Setting up Proxy Chains
 
@@ -115,6 +115,4 @@ Each hop to a proxy makes it harder to trace back where the first hop originated
 The key note with chaining proxies is the first proxy can see where the packet came from (src ip).
 
 ### Ramblings
------Issues with proxies-----
-- Free proxies
-- Residential proxies
+-----Why you should never use a free proxy-----
