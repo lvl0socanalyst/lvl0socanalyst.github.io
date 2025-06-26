@@ -45,7 +45,7 @@ There are tonnes of services on the clearnet and darknet that sell proxies. Of t
 
 There are a few types of proxies you can choose from depending on what you want them for. In terms of anonymity SOCKS5 proxies are definitely the best.
 
-Why are they better? 
+Why should you use a SOCKS5 proxy?
 - SOCKS5 proxies tunnel any TCP traffic, therefore, isn't limited to just web browsing like HTTP/HTTPs proxies. 
 - Common tools are easily configured to route traffic through these proxies (nmap, sqlmap, hydra, dirbuster, ssh, netcat)
 - Supports username/password authentication to securely access the proxy
@@ -90,13 +90,13 @@ So now we've been over the two proxy types you should care about. Here's where y
 
 Clearnet proxy stores
 
-[Proxy-Seller] (https://proxy-seller.com)
+[Proxy-Seller](https://proxy-seller.com)
 - Accepts XMR and other crypto as payment
 - HTTP/SOCKS5, IPv4 and residential proxies
 - No logs
 - Whitelist IPs
 
-[IPRoyal] (https://iproyal.com)
+[IPRoyal](https://iproyal.com)
 - Very popular and reliable
 - Slightly more expensive than usual
 - Accept XMR and other crypto as payment
