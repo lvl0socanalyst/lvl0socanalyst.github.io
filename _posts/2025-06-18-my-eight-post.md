@@ -111,4 +111,3 @@ For the next phase I'm going to add a list of conditions to exfil credential dat
 
 
 
-### Phase 3: XMRig option
