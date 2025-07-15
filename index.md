@@ -2,7 +2,6 @@
 layout: default
 ---
 
-
 <h2>Project Work</h2>
 <ul>
   {% for post in site.categories.project %}
