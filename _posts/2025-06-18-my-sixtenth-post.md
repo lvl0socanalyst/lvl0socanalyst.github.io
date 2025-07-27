@@ -2,7 +2,7 @@
 layout: post
 title:  "LummaStealer - Malware Analysis"
 date:   2025-06-16 21:00:00 +1000
-categories: threat intel
+categories: malware analysis
 ---
 
 <style>
