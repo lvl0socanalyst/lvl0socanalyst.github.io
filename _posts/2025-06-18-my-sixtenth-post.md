@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "LummaStealer - ClickFix MSI Installer Payload"
+title:  "LummaStealer - ClickFix Payload"
 date:   2025-06-16 21:00:00 +1000
 categories: malware analysis
 ---
 
 <style>
-  body { font-size: 15px; }
+  body { font-size: 16px; }
   body {font-family: 'Inter', sans-serif}
   h1 { font-size: 19px !important; }
   h2 { font-size: 17px !important; }
@@ -19,7 +19,7 @@ Full malware analysis on LummaStealer on a compromised website. This one took me
 
 LummaStealer has lots of different variants. Therefore, malware analysis found online varies significantly. A compromised website I've been monitoring that has pushed three different samples of LummaStealer to it's victims in the past week. Furthermore, each time you query the stage one domain the network IOCs change. So, it's super neat. One cool pickup that does seem consistent is. If your host in running in Russian, the malware terminates. Make of that what you like.
 
-### Compromised Website ClickFix
+### ClickFix Prompt Compromised Website
 
 I've booted up my Windows 10 VM so we can whack this through and see what happens.
 
@@ -108,7 +108,7 @@ Plot twist! You have got to be joking. So essentially what this means is. LummaS
 When I go to paste the command in run I get the domain 'veriqloudx' not 'fullporner'. Anyway, veriq was created two days ago. Pretty neat, good rep on VT. Nice.
 ![VT Veriqloudx](/images/veriq_rep.PNG)
 
-### LummaStealer on my VM
+### Lets run the payload
 
 Alright now we know what the server side is getting up to. Lets run one of these payloads in a VM and dig into what it's doing.
 
