@@ -7,6 +7,7 @@ categories: malware analysis
 
 <style>
   body { font-size: 13px; }
+  body {font-family: 'Inter', sans-serif}
   h1 { font-size: 19px !important; }
   h2 { font-size: 17px !important; }
   h3 { font-size: 15px !important; }
