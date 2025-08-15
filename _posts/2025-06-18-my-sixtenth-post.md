@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "LummaStealer Infected Website - ClickFix Payload"
+title:  "LummaStealer Infected Website"
 date:   2025-06-16 21:00:00 +1000
 categories: malware analysis
 ---
@@ -15,9 +15,9 @@ categories: malware analysis
 
 ## Overview - LummaStealer Malware Analysis (27th July 2025)
 
-Full malware analysis on how LummaStealer is delivered on a compromised website. 
+A look into how LummaStealer is delivered by a compromised website. 
 
-LummaStealer has lots of different variants. Therefore, malware analysis found online varies significantly. A compromised website I've been monitoring that has pushed three different samples of LummaStealer to it's victims in the past week. Furthermore, each time you query the stage one domain the network IOCs rotate. So, it's super neat. One cool pickup that does seem consistent is. If your host in running in Russian, the malware terminates. Make of that what you like.
+LummaStealer has lots of different variants. Therefore, malware analysis found online varies significantly. A compromised website I've been monitoring that has pushed three different samples of LummaStealer to it's victims in the past week. Furthermore, each time you query the stage one domain the network IOCs rotate. So, it's super neat. One cool pickup that does seem consistent is. If your host in running in Russian, the malware terminates.
 
 ### ClickFix Prompt Compromised Website
 
@@ -119,4 +119,4 @@ After running some basic recon scans on my own environment that replicated the w
 - Using Yoast SEO 25.5 Premium WP Plugin
 - Every request to any directory returns a 301 to Clickfix
 
-Nothing sticks out that is blatantly obvious
+Nothing sticks out that is blatantly obvious.

