@@ -14,15 +14,16 @@ categories: project
 </style>
 
 ### Overview
+
 [-----Malware Persistence Checker-----](https://github.com/lvl0socanalyst/Scripts/blob/main/malware_persistence_checker.ps1)
 
 Script that checks for common malware persistence vectors.
 
 Useful when performing analysis on a potentially compromised PC that has been disconnected from the internet. 
 
-Rather than post the whole script I'll just run over and explain the functions/how to use it. 
-
 I'll slowly add function by function. But I'll start with reg keys. Couldn't you just use autoruns? YES. But that's no fun.
+
+Rather than post the whole script I'll just run over and explain the functions/how to use it. 
 
 Potentially suspicious findings will be dumped in CLI. All results will be whacked into a .txt file
 - Therefore, if you don't like the regex or what is marked as 'suspicious' you can change it. Or just view the .txt to see the full output

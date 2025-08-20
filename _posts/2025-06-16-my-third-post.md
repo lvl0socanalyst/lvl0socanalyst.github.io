@@ -43,5 +43,3 @@ Base64 is deterministic. Meaning there is no randomness. So, identifying pattern
 - ```Get-SmbShare```
 - ```net view \\hostname```
 - ```Get-Service | Where-Object {$_.Status -eq 'Running'}``` 
-
---- Domain Recon ---
