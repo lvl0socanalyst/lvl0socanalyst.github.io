@@ -18,7 +18,7 @@ layout: default
 
 <h2>Threat Hunting</h2>
 <ul>
-  {% for post in site.categories.threat intel %}
+  {% for post in site.categories.threat hunting %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
