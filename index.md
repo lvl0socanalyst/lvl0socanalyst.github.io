@@ -16,9 +16,9 @@ layout: default
   {% endfor %}
 </ul>
 
-<h2>Threat Hunting</h2>
+<h2>Hunting</h2>
 <ul>
-  {% for post in site.categories.threat hunting %}
+  {% for post in site.categories.hunting %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
