@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "LummaStealer Infected Website"
+title:  "ClickFix LummaStealer - JS Deepdive"
 date:   2025-06-16 21:00:00 +1000
 categories: malware analysis
 ---
