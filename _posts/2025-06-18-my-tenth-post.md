@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Purchasing Crypto from Haveno (Open-Source P2P Exchange)"
-date:   2025-06-16 21:00:00 +1000
+date:   2025-08-20 21:00:00 +1000
 categories: tutorials
 ---
 
