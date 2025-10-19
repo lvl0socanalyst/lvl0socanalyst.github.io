@@ -2,7 +2,7 @@
 layout: post
 title:  "Powershell for Checking Malware Persistence (All-In-One Script)"
 date:   2025-05-25 21:00:00 +1000
-categories: project
+categories: scripts
 ---
 
 <style>
