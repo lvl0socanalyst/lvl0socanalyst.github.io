@@ -29,5 +29,7 @@ Current Setup
 
 I stupidly left this on. And I had a big old bill. I'm going to start taking a snapshot of this everytime I stop using it. 
 
-To-Do
-- Start ingesting feeds
+## Stage 2
+
+Well given the cost. I'm gonna set this up again, but this time on a VPS. Because a lvl0 soc analyst can't afford to be buying Jeff Bezos another superyacht.
+
