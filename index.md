@@ -30,6 +30,13 @@ layout: default
   {% endfor %}
 </ul>
 
+<h2>Forensics</h2>
+<ul>
+  {% for post in site.categories.forensics %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
 <h2>Privacy</h2>
 <ul>
   {% for post in site.categories.privacy %}
