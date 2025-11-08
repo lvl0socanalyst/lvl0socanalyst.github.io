@@ -51,6 +51,13 @@ layout: default
   {% endfor %}
 </ul>
 
+<h2>Pentesting</h2>
+<ul>
+  {% for post in site.categories.pentesting %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
 <h2>Scripts</h2>
 <ul>
   {% for post in site.categories.scripts %}
