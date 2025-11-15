@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ClickFix LummaStealer - JS Deepdive"
+title:  "LummaStealer Clickfix - JS Deepdive"
 date:   2025-06-16 21:00:00 +1000
 categories: malware analysis
 ---
@@ -96,8 +96,6 @@ So now we know how this works. Lets try grab this domain. After clicking the tic
 ![encoded jsc](/images/jsc_obfuscate.PNG)
 
 Now this is what brainbot returned. Also side note you can see the requests to the IP check domains on the side as well.
-
-![brainbot base64 response](/images/brainbot_response.PNG)
 
 Lastly, lets deobfuscate. My friend ChatGPT will assist here.
 
