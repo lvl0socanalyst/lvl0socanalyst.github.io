@@ -67,5 +67,5 @@ These commands serve the purpose of when an attacker has not yet imported BloodH
 Base64 is deterministic. Meaning there is no randomness. Identifying B64 patterns is important when threat hunting and creating SIEM rules.
 
 --- Threat Hunting Patterns ---
-- SQBuAHYAbwBrAGUALQBX (Invoke-WebRequest)
-- aQBlAHgAIAAoAE4AZQB3 (iex (New-Object Net.WebClient))
+- ``SQBuAHYAbwBrAGUALQBX`` (Invoke-WebRequest)
+- ``aQBlAHgAIAAoAE4AZQB3`` (iex (New-Object Net.WebClient))
