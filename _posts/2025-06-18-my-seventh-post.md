@@ -13,6 +13,6 @@ categories: privacy
   h3 { font-size: 15px !important; }
 </style>
 
-Microsoft loves receiving data about your machine. This page explores the level at which this occurs and whether its preventable.
+Microsoft loves receiving your data. This page explores the level at which this occurs and ways in which you can prevent it.
 
 ### Phase 1: WireShark Capture
