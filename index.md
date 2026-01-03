@@ -64,3 +64,10 @@ layout: default
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
+
+<h2>CTFs</h2>
+<ul>
+  {% for post in site.categories.ctfs %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
