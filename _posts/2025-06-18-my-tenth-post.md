@@ -58,4 +58,7 @@ However, say you we're based in Italy and someone was selling XMR for euro's. Yo
 
 ### Why Cake Wallet
 
-Cake Wallet is an IOS and Android application.
+Cake Wallet is an open source Non-KYC IOS and Android application great for mixing cryptos.
+
+Cake is ideal for down the line. If you perhaps purchase some crypto from a KYC exchange you can send to Cake and mix it.
+
