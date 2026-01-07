@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Purchasing Crypto from Haveno (Open-Source P2P Exchange)"
+title:  "Crypto from Haveno (Open-Source P2P Exchange)"
 date:   2025-08-20 21:00:00 +1000
-categories: tutorials
+categories: privacy
 ---
 
 <style>
@@ -15,7 +15,7 @@ categories: tutorials
 
 ## Overview
 
-How to purchase monero anonymously on the world's greatest P2P exchange.
+Crypto from Haveno and Cake Wallet and why it's great!
 
 ### Why Haveno
 
@@ -32,9 +32,15 @@ Haveno is a fork from Bisq. If you haven't heard of Bisq is it's practically Hav
 
 Haveno is built on the Tor network. So every request is routed through Tor nodes. Thus, adding another layer of anonymity to the platform.
 
-### KYC and Non-KYC
+### KYC and No-KYC
 
+Know Your Customer
 
+No Know Your Customer
+
+This refers to the process of signing up for an application that stores your data. Often this isn't actually required to complete what you want.
+
+No-KYC exchanges are ideal for people look to swap/mix cryptos. As the transaction isn't tied to a government ID.
 
 ### Logistics
 
@@ -50,9 +56,6 @@ So for the ultra paranoid 'Cash by Mail' is clearly the way to go.
 
 However, say you we're based in Italy and someone was selling XMR for euro's. You could transfer money to there bank through a local bank transfer and receive the monero. Now no one has to know what/why this purchase occurred. Because no one is facilitating it. But yourself(taker) and the seller(maker).
 
-### Setup
+### Why Cake Wallet
 
------Requirements-----
-- Tails or Whonix 
-
-### Security considerations
+Cake Wallet is an IOS and Android application.
