@@ -14,9 +14,6 @@ whoami
 Write-Host "`n[+] View all users"
 Get-LocalUser
 
-Write-Host "`n[+] Disk Info"
-Get-PSDrive -PSProvider FileSystem
-
 Write-Host "`n[+] Domain Info"
 cmd /c "net view /domain"
 
