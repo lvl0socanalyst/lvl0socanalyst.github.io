@@ -1,0 +1,18 @@
+Write-Host "=== SYSTEM INFORMATION ===" -ForegroundColor Cyan
+Write-Host "`n[+] Computer Info"
+Get-ComputerInfo | Select-Object CsName, WindowsVersion, WindowsBuildLabEx, OsArchitecture
+Write-Host "`n[+] Operating System"
+Get-CimInstance Win32_OperatingSystem | Select-Object Caption, Version, BuildNumber, OSArchitecture
+Write-Host "`n[+] Current User"
+whoami
+Write-Host "`n[+] View all users"
+Get-LocalUser
+Write-Host "`n[+] Logged-in Users"
+query user 2>$null
+Write-Host "`n[+] Disk Info"
+Get-PSDrive -PSProvider FileSystem
+Write-Host "`n [+] Domain Info"
+net view /domain
+Write-Host "`n [+] Entra Info"
+dsregcmd.exe /status
+Write-Host "`n=== END OF RECON ===" -ForegroundColor Cyan
