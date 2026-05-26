@@ -17,13 +17,12 @@ categories: project
 
 The real operating system is your browser. EDR's lack telemetry into browser activity. They are unable to inspect at the DOM level.
 
-*What EDRs can see (Windows)*
+What EDRs can see (Windows)
 - DNS requests from Chrome
 - Browser Extensions that are loaded
-- History and sites visited
 
-*What they can't see (Windows)*
-- Document Object Model (DOM) modifications
+What they can't see (Windows)
+- Document Object Model (DOM)
 - JS execution
 - Cookies and tokens
 - Messaging between service worker and content script(s)
@@ -34,12 +33,12 @@ There are some writeups on polymorphic extensions that can mimick other installe
 
 Most industry leading EDRs offer options for auditing browser extensions but provide no proactive solution for blocking these extensions from loading.
 - If an extension exfiled data you would essentially have no telemetry into what was exfiled with an EDR
-- Extensions can steal user tokens and cookies. Therefore, hypothetically able to bypass MFA requirements for logins
+- Extensions steal user tokens and cookies. Therefore, hypothetically able to bypass MFA requirements.
 
 -----Solution-----
 - GPO (Whitelist Approved Extensions) (Legacy solution)
 
-Without GPO. You are reliant on your trusty friends at Google and Microsoft to audit every extension installed onto the store. All it takes is a quick google to realise this isn't happening.
+Without GPO. You are reliant on your trusty friends at Google and Microsoft to audit every extension added to the store. News flash, they suck at this - currently a joke.
 
 ### Phase 1: InfoStealer (Static)
 
@@ -47,19 +46,19 @@ Without GPO. You are reliant on your trusty friends at Google and Microsoft to a
 
 -----How is it possible?-----
 
-Well essentially as soon as you install a browser extension you give it full permissions to stuff with anything and everything html, css and js. Which is everything you do in your browser. Depending on what browser is used there are APIs that are called that give the extensions the ability to interact with your browser. 
+When you install a browser extension you give it certain permissions, this defines it's ability to interact with your browser. Usually extensions are overly permissive. Better to be safe than sorry.
 
 Common format of an extension directory
 ```\DaRk MoDe```
-  ```manifest.json```
-  ```background.js```
-  ```content.js```
-  ```popup.html```
-  ```popup.js```
+- ```manifest.json```
+- ```background.js```
+- ```content.js```
+- ```popup.html```
+- ```popup.js```
 
 A Background Service Worker (background.js) is an event driven js file that runs in the background.
 
-*What Chrome Extension APIs can service workers interact with?*
+What Chrome Extension APIs can service workers interact with?
 - Chrome.tabs (query, update tabs)
 - Chrome.cookies (read/write cookies)
 - Chrome.scripting (inject scripts)
@@ -69,7 +68,7 @@ Service workers are used to send messages to 'Content Scripts'. Content Scripts 
 
 Serice Workers inject the content scripts into the tabs when an event occurs.
 
-*What can a 'Content Script' do?*
+What can a 'Content Script' do?
 - Manipulate the DOM
 - Interact with webpage's JS
 - Send and receive messages from the background service worker.
@@ -104,11 +103,12 @@ How data is exfiled
 
 -----Ramblings-----
 
-As I was programming this it struck me how dangerous these extensions can be. Previously I've programmed keyloggers that aimed to capture Chrome and Edge browsing activity. It was great and captured sites visited, keystrokes and the lot. However, it didn't have the capability to interact with a page or invoke an action when a certain condition inside the browser occurred. The capability for extensions to be targetted for specific purposes is crazy. I can create a condition that triggers the service worker to call a content script when facebook.com is visited, to redirect the http request to my malicious facebook login page. Furthermore, I could do this for O365 logins as well. Who doesn't love conditional statements? I have a feeling at the end of this project I'm going to be sick of them.
+Extensions are an actual joke, they're give an incredible opportunity to threat actors. Previously I've developed some experimental malware that captures Chrome and Edge browsing activity. Capturing sites visited, keystrokes and the lot. However, it didn't have the capability to interact with a page or invoke an action when a certain condition inside the browser occurred. The capability for extensions to be targetted for specific purposes is crazy. I can create a condition that triggers the service worker to call a content script when facebook.com is visited, to redirect the http request to my malicious facebook login page. Furthermore, I could do this for O365 logins as well. Who doesn't love conditional statements? I have a feeling at the end of this project I'm going to be sick of them.
 
 For the next phase I'm going to add a list of conditions to exfil credential data when Facebook is visited. I can choose a field for the content script to look out for on a certain web page and steal that value when a HTTP POST request is invoked.
 
 ### Phase 2: If Facebook is visited. Steal my username and password DaRk MoDe
 
-
-
+### Phase 3: Malware Extensions facilitating C2 communications?
+Recently, read this threat report from Google. I did not think this was possible. However, it is.
+[UNC6692 SnowBelt C2 Browser Extension](cloud.google.com/blog/topics/threat-intelligence/unc6692-social-engineering-custom-malware)
