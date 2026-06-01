@@ -3,6 +3,8 @@ description: "Project Work, Malware Analysis, Threat Hunting/Intel, Pentesting, 
 
 remote_theme: "mmistakes/minimal-mistakes@master"
 
+minimal_mistakes_skin: "default"
+
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
