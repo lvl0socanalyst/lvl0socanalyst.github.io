@@ -22,3 +22,21 @@ $text-color:       #1f1f23;   // dark text for contrast on the light bg
 .sidebar {
   background-color: #fafafa;   // the second, lighter white
 }
+
+body {
+  background-color: #f4f4f5;
+}
+
+// Content + sidebar = the lighter near-white, lifted off the page
+.page__content,
+.archive,
+.sidebar,
+.page__inner-wrap {
+  background-color: #fafafa;
+}
+
+// Give the content panel a little breathing room so the two shades read clearly
+#main {
+  background-color: #fafafa;
+  border-radius: 6px;
+}

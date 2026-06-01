@@ -36,7 +36,10 @@ defaults:
       path: ""
       type: posts
     values:
+      layout: single
       author_profile: true
+      read_time: true
+      show_date: true
 
 category_archive:
   type: liquid
