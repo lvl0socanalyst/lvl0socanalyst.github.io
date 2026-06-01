@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Basic Powershell for Red Teaming"
 date:   2025-05-23 21:00:00 +1000
 categories: pentesting

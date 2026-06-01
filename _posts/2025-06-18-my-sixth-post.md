@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Tails and Whonix for TOR"
 date:   2025-06-16 21:00:00 +1000
 categories: privacy

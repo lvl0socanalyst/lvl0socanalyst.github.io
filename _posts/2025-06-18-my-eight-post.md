@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Lvl0's Infostealer Browser Extension - Token Snatcher"
 date:   2025-06-16 21:00:00 +1000
 categories: project

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Crypto from Haveno (Open-Source P2P Exchange)"
 date:   2025-08-20 21:00:00 +1000
 categories: privacy

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Different types of Proxies and ProxyChains"
 date:   2025-06-16 21:00:00 +1000
 categories: privacy
