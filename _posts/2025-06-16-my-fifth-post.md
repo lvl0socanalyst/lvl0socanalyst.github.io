@@ -5,14 +5,6 @@ date:   2025-06-20 21:00:00 +1000
 categories: scripts
 ---
 
-<style>
-  body { font-size: 16px; }
-  body {font-family: 'Inter', sans-serif}
-  h1 { font-size: 19px !important; }
-  h2 { font-size: 17px !important; }
-  h3 { font-size: 15px !important; }
-</style>
-
 ### Overview
 VT Premium costs an arm and a leg. With a non-paid account you can call the API about 500 times a month and 1 call per 15 seconds. Here are a few scripts that work within that tier and are somewhat automated.
 

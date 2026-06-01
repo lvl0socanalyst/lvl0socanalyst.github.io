@@ -1,17 +1,9 @@
 ---
 layout: post
-title:  "LummaStealer Clickfix - JS Deepdive"
+title:  "LummaStealer Clickfix Deployment - JavaScript Deepdive"
 date:   2025-06-16 21:00:00 +1000
 categories: malware analysis
 ---
-
-<style>
-  body { font-size: 16px; }
-  body {font-family: 'Inter', sans-serif}
-  h1 { font-size: 19px !important; }
-  h2 { font-size: 17px !important; }
-  h3 { font-size: 15px !important; }
-</style>
 
 ## Overview - LummaStealer Malware Analysis (27th July 2025)
 

@@ -5,14 +5,6 @@ date:   2025-05-23 21:00:00 +1000
 categories: pentesting
 ---
 
-<style>
-  body { font-size: 16px; }
-  body {font-family: 'Inter', sans-serif}
-  h1 { font-size: 19px !important; }
-  h2 { font-size: 17px !important; }
-  h3 { font-size: 15px !important; }
-</style>
-
 ## Red teaming powershell scripts. Droppers and more.
 
 Bunch of potentially malicious powershell commands that are helpful in Red teaming but also useful for defenders to know. Seeing these commands in logs are usually a pretty good indicator of a compromise. However, a lot of these commands have legitimate administrative use as well.

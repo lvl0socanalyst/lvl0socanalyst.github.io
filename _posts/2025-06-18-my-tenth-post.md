@@ -5,14 +5,6 @@ date:   2025-08-20 21:00:00 +1000
 categories: privacy
 ---
 
-<style>
-  body { font-size: 16px; }
-  body {font-family: 'Inter', sans-serif}
-  h1 { font-size: 19px !important; }
-  h2 { font-size: 17px !important; }
-  h3 { font-size: 15px !important; }
-</style>
-
 ## Overview
 
 Crypto from Haveno and Cake Wallet and why it's great!
@@ -61,4 +53,3 @@ However, say you we're based in Italy and someone was selling XMR for euro's. Yo
 Cake Wallet is an open source Non-KYC IOS and Android application great for mixing cryptos.
 
 Cake is ideal for down the line. If you perhaps purchase some crypto from a KYC exchange you can send to Cake and mix it.
-
