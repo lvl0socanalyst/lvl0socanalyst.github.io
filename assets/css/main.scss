@@ -11,6 +11,9 @@ $max-width: 1400px;
 
 body,
 .masthead,
+.masthead__inner-wrap,
+.masthead__menu,
+.greedy-nav,
 .page__footer,
 #main,
 .page__content,
@@ -18,7 +21,7 @@ body,
 .sidebar,
 .page,
 .page__inner-wrap {
-  background-color: #f5f5f2 !important;
+  background-color: #e8e8ea !important;
 }
 
 .page__content p,
