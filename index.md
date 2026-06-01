@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: single
+author_profile: true
+title: "Home"
 ---
 
 <h2>Project Work</h2>
