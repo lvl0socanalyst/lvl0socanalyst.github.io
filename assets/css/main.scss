@@ -16,27 +16,41 @@ $text-color:       #1f1f23;   // dark text for contrast on the light bg
 @import "minimal-mistakes";
 
 // ---- Plain CSS overrides AFTER the theme ----
-// Content sits on the slightly lighter shade so it lifts off the page
-.page__content,
-.archive,
-.sidebar {
-  background-color: #fafafa;   // the second, lighter white
-}
 
+// Whole page background = barely-grey
 body {
-  background-color: #f4f4f5;
+  background-color: #f4f4f5 !important;
 }
 
-// Content + sidebar = the lighter near-white, lifted off the page
+// The content panel = lighter near-white. One surface, no stripes.
+#main,
+.page,
+.page__inner-wrap,
 .page__content,
-.archive,
-.sidebar,
-.page__inner-wrap {
-  background-color: #fafafa;
+.archive {
+  background-color: #fafafa !important;
 }
 
-// Give the content panel a little breathing room so the two shades read clearly
-#main {
-  background-color: #fafafa;
-  border-radius: 6px;
+// Kill any nested white backgrounds painting "stripes" behind text
+.page__content p,
+.page__content li,
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.archive__item,
+.list__item {
+  background-color: transparent !important;
+}
+
+// Wider, comfortable reading column for monospace
+.page {
+  max-width: 1000px;
+  float: none;
+  margin: 0 auto;
+  padding: 1.5em 2em;
+}
+
+// Sidebar stays on the lighter shade too
+.sidebar {
+  background-color: #fafafa !important;
 }
