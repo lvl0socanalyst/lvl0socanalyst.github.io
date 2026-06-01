@@ -17,7 +17,6 @@ kramdown:
     block:
       line_numbers: false
 
-# Left sidebar author panel (the dirkjanm.io look)
 author:
   name: "Lvl 0 SOC"
   avatar: "/assets/images/me.png"
@@ -25,12 +24,11 @@ author:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/yourhandle"
+      url: "https://www.linkedin.com/in/callum-height-671420181/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/lvl0socanalyst"
 
-# Show the author panel + category pages on all posts
 defaults:
   - scope:
       path: ""
@@ -38,7 +36,6 @@ defaults:
     values:
       author_profile: true
 
-# Categories → posts layout
 category_archive:
   type: liquid
   path: /categories/
