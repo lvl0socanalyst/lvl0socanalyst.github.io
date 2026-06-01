@@ -21,7 +21,6 @@ kramdown:
 
 author:
   name: "Callum Height"
-  avatar: "/assets/images/me.png"
   bio: "Project Work, Malware Analysis, Threat Hunting/Intel, Pentesting, CTFs, Privacy content and Scripts you'll never use"
   links:
     - label: "LinkedIn"
@@ -39,7 +38,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      show_date: true
+      classes: wide
 
 category_archive:
   type: liquid

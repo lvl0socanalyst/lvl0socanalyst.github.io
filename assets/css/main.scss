@@ -17,40 +17,25 @@ $text-color:       #1f1f23;   // dark text for contrast on the light bg
 
 // ---- Plain CSS overrides AFTER the theme ----
 
-// Whole page background = barely-grey
+// Page background = barely-grey
 body {
   background-color: #f4f4f5 !important;
 }
 
-// The content panel = lighter near-white. One surface, no stripes.
+// Content + sidebar surfaces = lighter near-white
 #main,
-.page,
-.page__inner-wrap,
 .page__content,
-.archive {
+.archive,
+.sidebar {
   background-color: #fafafa !important;
 }
 
-// Kill any nested white backgrounds painting "stripes" behind text
+// Remove white "stripes" behind text
 .page__content p,
 .page__content li,
 .page__content h1,
 .page__content h2,
 .page__content h3,
-.archive__item,
-.list__item {
+.archive__item {
   background-color: transparent !important;
-}
-
-// Wider, comfortable reading column for monospace
-.page {
-  max-width: 1200px;
-  float: none;
-  margin: 0 auto;
-  padding: 1.5em 2em;
-}
-
-// Sidebar stays on the lighter shade too
-.sidebar {
-  background-color: #fafafa !important;
 }
