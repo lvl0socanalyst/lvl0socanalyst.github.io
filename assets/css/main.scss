@@ -4,29 +4,21 @@
 
 $global-font-family: 'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace;
 $header-font-family: 'JetBrains Mono', monospace;
+$max-width: 1400px;
 
 @import "minimal-mistakes/skins/default";
 @import "minimal-mistakes";
 
-body,
-.masthead,
-.page__footer {
+body, .masthead, .page__footer {
   background-color: #e8e8ea !important;
 }
 
-#main,
-.page__content,
-.archive,
-.sidebar,
-.page {
+#main, .page__content, .archive, .sidebar, .page {
   background-color: #fcfcfc !important;
 }
 
-.page__content p,
-.page__content li,
-.page__content h1,
-.page__content h2,
-.page__content h3,
+.page__content p, .page__content li,
+.page__content h1, .page__content h2, .page__content h3,
 .archive__item {
   background-color: transparent !important;
 }
