@@ -3,6 +3,9 @@ remote_theme: pages-themes/hacker@v0.2.0
 description: "Project Work, Malware Analysis, Threat Hunting/Intel, Pentesting, CTFs, Privacy content and Scripts you'll never use"
 author:
   name: "Lvl 0 SOC"
+  links:
+  - label: "LinkedIn"
+    icon: "fab fa-fw fa-twitter"
 locale: "en-US"
 
 markdown: kramdown
@@ -14,10 +17,10 @@ kramdown:
     block:
       line_numbers: false
 
-
+remote_theme: "mmistakes/minimal-mistakes@master"
 plugins:
   - jekyll-remote-theme
-  - jekyll-seo-tag
+  - jekyll-include-cache
 
 defaults:
   -
