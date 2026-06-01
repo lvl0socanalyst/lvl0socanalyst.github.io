@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Powershell for Checking Malware Persistence (All-In-One Script)"
+title:  "Powershell Malware Persistence Auditing Script"
 date:   2025-05-25 21:00:00 +1000
 categories: scripts
 ---
@@ -19,9 +19,11 @@ categories: scripts
 
 Script that checks for common malware persistence vectors.
 
-Useful when performing analysis on a potentially compromised PC that has been disconnected from the internet. 
+Couldn't you just use autoruns? YES. But that's no fun.
 
-I'll slowly add function by function. But I'll start with reg keys. Couldn't you just use autoruns? YES. But that's no fun.
+Useful when performing analysis on a potentially compromised host that has been disconnected from the internet. 
+
+I'll slowly add function by function. But I'll start with reg keys.
 
 Rather than post the whole script I'll just run over and explain the functions/how to use it. 
 
