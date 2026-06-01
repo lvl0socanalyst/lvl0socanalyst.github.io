@@ -1,4 +1,4 @@
-title: "Lvl 0 SOC Analyst Ramblings"
+title: "Callum Height - Lvl 0 SOC Analyst Ramblings"
 description: "Project Work, Malware Analysis, Threat Hunting/Intel, Pentesting, CTFs, Privacy content and Scripts you'll never use"
 
 remote_theme: "mmistakes/minimal-mistakes@master"
@@ -20,9 +20,9 @@ kramdown:
       line_numbers: false
 
 author:
-  name: "Lvl 0 SOC"
+  name: "Callum Height"
   avatar: "/assets/images/me.png"
-  bio: "SOC analyst and security researcher. Project work, malware analysis, threat hunting, pentesting, CTFs, and privacy."
+  bio: "Project Work, Malware Analysis, Threat Hunting/Intel, Pentesting, CTFs, Privacy content and Scripts you'll never use"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
