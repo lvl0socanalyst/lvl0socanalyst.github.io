@@ -1,30 +1,44 @@
 title: "Lvl 0 SOC Analyst Ramblings"
-remote_theme: pages-themes/hacker@v0.2.0
 description: "Project Work, Malware Analysis, Threat Hunting/Intel, Pentesting, CTFs, Privacy content and Scripts you'll never use"
-author:
-  name: "Lvl 0 SOC"
-  links:
-  - label: "LinkedIn"
-    icon: "fab fa-fw fa-twitter"
-locale: "en-US"
 
+remote_theme: "mmistakes/minimal-mistakes@master"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-paginate
+
+locale: "en-US"
 markdown: kramdown
 highlighter: rouge
-
 kramdown:
   input: GFM
   syntax_highlighter_opts:
     block:
       line_numbers: false
 
-remote_theme: "mmistakes/minimal-mistakes@master"
-plugins:
-  - jekyll-remote-theme
-  - jekyll-include-cache
+# Left sidebar author panel (the dirkjanm.io look)
+author:
+  name: "Lvl 0 SOC"
+  avatar: "/assets/images/me.png"
+  bio: "SOC analyst and security researcher. Project work, malware analysis, threat hunting, pentesting, CTFs, and privacy."
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/yourhandle"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lvl0socanalyst"
 
+# Show the author panel + category pages on all posts
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
+      type: posts
     values:
-      css: "/assets/css/style.css"
+      author_profile: true
+
+# Categories → posts layout
+category_archive:
+  type: liquid
+  path: /categories/
